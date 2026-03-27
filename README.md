@@ -1,29 +1,33 @@
-# Project Template
+# flash-quote-api
 
-This is a template for new projects created via `wiggum_master.sh create`.
+A tiny FastAPI service that returns random inspirational quotes.
 
-Each project:
-- Lives in `projects/<project-name>/`
-- Has its own GitHub repository
-- Runs its own autonomous OpenCode agent loop
-- Tracks progress in TASKS.md
+## Overview
 
-## Setup
+This is a simple REST API that provides:
+- Random inspirational quotes
+- Quote collection browsing
+- Category filtering
+- OpenAPI/Swagger documentation
 
-1. Create: `bash wiggum_master.sh create "my-project" "Description"`
-2. View: `cat projects/my-project/README.md`
-3. Initialize: `cd projects/my-project && opencode /init --yes`
-4. Run: `cd projects/my-project && bash wiggum.sh`
+## Quick Start
 
-## Files
+```bash
+# Install dependencies
+pip install fastapi uvicorn
 
-- **README.md** - Project documentation
-- **TASKS.md** - Development task list
-- **prompt.txt** - Agent instructions (project-specific)
-- **AGENTS.md** - Project context (auto-generated)
-- **src/** - Source code directory
-- **tests/** - Test files
+# Run the server
+uvicorn main:app --reload
+```
 
-## Customization
+Visit http://localhost:8000/docs for interactive API documentation.
 
-Update TASKS.md with your project goals, then let the agent handle it!
+## Project Status
+
+**Phase 1: Planning & Setup**
+- ✅ Quote data structure defined (JSON with id, text, author, category)
+- ⬜ Choose storage method
+- ⬜ Initialize FastAPI project
+- ⬜ Set up basic project structure
+
+See [TASKS.md](TASKS.md) for full development roadmap.

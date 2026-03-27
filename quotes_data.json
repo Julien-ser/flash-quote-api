@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "motivation"
+  },
+  {
+    "id": 2,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "life"
+  },
+  {
+    "id": 3,
+    "text": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "category": "inspiration"
+  },
+  {
+    "id": 4,
+    "text": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "category": "perseverance"
+  },
+  {
+    "id": 5,
+    "text": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "category": "wisdom"
+  }
+]

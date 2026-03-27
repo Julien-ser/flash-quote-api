@@ -1,29 +1,132 @@
-# Project Template
+# flash-quote-api
 
-This is a template for new projects created via `wiggum_master.sh create`.
+A tiny FastAPI service that returns random inspirational quotes.
 
-Each project:
-- Lives in `projects/<project-name>/`
-- Has its own GitHub repository
-- Runs its own autonomous OpenCode agent loop
-- Tracks progress in TASKS.md
+## Architecture
 
-## Setup
+**Storage Design:**
+- Quotes are stored in `quotes_data.json` (JSON array with id, text, author, category)
+- On startup, the entire JSON file is loaded into memory as a Python list
+- All API endpoints read from this in-memory array for maximum performance
+- This approach provides O(1) random access and O(n) category filtering with minimal overhead
 
-1. Create: `bash wiggum_master.sh create "my-project" "Description"`
-2. View: `cat projects/my-project/README.md`
-3. Initialize: `cd projects/my-project && opencode /init --yes`
-4. Run: `cd projects/my-project && bash wiggum.sh`
+**Trade-offs:**
+- ✅ Fast read performance (no database queries)
+- ✅ Simple implementation and maintenance
+- ✅ No external dependencies beyond FastAPI
+- ⚠️ Data is read-only at runtime (modify JSON file to update quotes)
+- ⚠️ Memory usage scales with quote count (negligible for <1000 quotes)
 
-## Files
+## Quick Start
 
-- **README.md** - Project documentation
-- **TASKS.md** - Development task list
-- **prompt.txt** - Agent instructions (project-specific)
-- **AGENTS.md** - Project context (auto-generated)
-- **src/** - Source code directory
-- **tests/** - Test files
+### Local Development
 
-## Customization
+```bash
+# Install dependencies
+pip install fastapi uvicorn
 
-Update TASKS.md with your project goals, then let the agent handle it!
+# Run the server
+uvicorn main:app --reload
+```
+
+### Docker Deployment
+
+```bash
+# Build the Docker image
+docker build -t flash-quote-api .
+
+# Run the container
+docker run -p 8000:8000 flash-quote-api
+```
+
+The API will be available at http://localhost:8000
+
+## API Documentation
+
+The API provides three endpoints for accessing inspirational quotes. FastAPI automatically generates interactive OpenAPI/Swagger documentation at:
+
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+
+### Endpoints
+
+#### GET / (Root)
+
+Returns a single random quote.
+
+**Response:**
+```json
+{
+  "id": 42,
+  "text": "The only way to do great work is to love what you do.",
+  "author": "Steve Jobs",
+  "category": "motivation"
+}
+```
+
+#### GET /quotes
+
+Returns all quotes, with optional category filtering.
+
+**Query Parameters:**
+- `category` (optional): Filter quotes by category (e.g., "motivation", "life", "inspiration")
+
+**Example (all quotes):**
+```json
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "motivation"
+  },
+  {
+    "id": 2,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "life"
+  }
+]
+```
+
+**Example (filtered by category=motivation):**
+```json
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "motivation"
+  }
+]
+```
+
+#### GET /quote/{quote_id}
+
+Returns a specific quote by its unique ID.
+
+**Path Parameters:**
+- `quote_id`: The unique numeric identifier of the quote
+
+**Example response:**
+```json
+{
+  "id": 42,
+  "text": "The only way to do great work is to love what you do.",
+  "author": "Steve Jobs",
+  "category": "motivation"
+}
+```
+
+**Error responses:**
+- `404 Not Found`: When the specified quote ID does not exist
+
+## Project Status
+
+**Phase 1: Planning & Setup**
+- ✅ Quote data structure defined (JSON with id, text, author, category)
+- ✅ Storage method: JSON file loaded into memory at startup
+- ✅ Initialize FastAPI project with uv/pip
+- ✅ Set up tests directory and add unit tests
+
+See [TASKS.md](TASKS.md) for full development roadmap.

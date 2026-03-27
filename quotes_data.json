@@ -28,5 +28,275 @@
     "text": "In the middle of difficulty lies opportunity.",
     "author": "Albert Einstein",
     "category": "wisdom"
+  },
+  {
+    "id": 6,
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "motivation"
+  },
+  {
+    "id": 7,
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "category": "inspiration"
+  },
+  {
+    "id": 8,
+    "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "category": "courage"
+  },
+  {
+    "id": 9,
+    "text": "Don't count the days, make the days count.",
+    "author": "Muhammad Ali",
+    "category": "life"
+  },
+  {
+    "id": 10,
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "category": "wisdom"
+  },
+  {
+    "id": 11,
+    "text": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "category": "motivation"
+  },
+  {
+    "id": 12,
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "inspiration"
+  },
+  {
+    "id": 13,
+    "text": "Fall seven times, stand up eight.",
+    "author": "Japanese Proverb",
+    "category": "perseverance"
+  },
+  {
+    "id": 14,
+    "text": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "category": "growth"
+  },
+  {
+    "id": 15,
+    "text": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C.S. Lewis",
+    "category": "inspiration"
+  },
+  {
+    "id": 16,
+    "text": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "category": "motivation"
+  },
+  {
+    "id": 17,
+    "text": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "category": "courage"
+  },
+  {
+    "id": 18,
+    "text": "Our lives begin to end the day we become silent about things that matter.",
+    "author": "Martin Luther King Jr.",
+    "category": "purpose"
+  },
+  {
+    "id": 19,
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "category": "perseverance"
+  },
+  {
+    "id": 20,
+    "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "category": "wisdom"
+  },
+  {
+    "id": 21,
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "category": "life"
+  },
+  {
+    "id": 22,
+    "text": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington",
+    "category": "kindness"
+  },
+  {
+    "id": 23,
+    "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "motivation"
+  },
+  {
+    "id": 24,
+    "text": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "category": "action"
+  },
+  {
+    "id": 25,
+    "text": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "category": "courage"
+  },
+  {
+    "id": 26,
+    "text": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "category": "mindset"
+  },
+  {
+    "id": 27,
+    "text": "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+    "author": "Mother Teresa",
+    "category": "inspiration"
+  },
+  {
+    "id": 28,
+    "text": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.",
+    "author": "Ralph Waldo Emerson",
+    "category": "purpose"
+  },
+  {
+    "id": 29,
+    "text": "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do.",
+    "author": "H. Jackson Brown Jr.",
+    "category": "motivation"
+  },
+  {
+    "id": 30,
+    "text": "Do one thing every day that scares you.",
+    "author": "Eleanor Roosevelt",
+    "category": "courage"
+  },
+  {
+    "id": 31,
+    "text": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "category": "action"
+  },
+  {
+    "id": 32,
+    "text": "Don't be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "category": "courage"
+  },
+  {
+    "id": 33,
+    "text": "I find that the harder I work, the more luck I seem to have.",
+    "author": "Thomas Jefferson",
+    "category": "success"
+  },
+  {
+    "id": 34,
+    "text": "A person who never made a mistake never tried anything new.",
+    "author": "Albert Einstein",
+    "category": "growth"
+  },
+  {
+    "id": 35,
+    "text": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "category": "mindset"
+  },
+  {
+    "id": 36,
+    "text": "Everything you've ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "category": "courage"
+  },
+  {
+    "id": 37,
+    "text": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+    "author": "Roy T. Bennett",
+    "category": "purpose"
+  },
+  {
+    "id": 38,
+    "text": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+    "author": "Mahatma Gandhi",
+    "category": "wisdom"
+  },
+  {
+    "id": 39,
+    "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "category": "excellence"
+  },
+  {
+    "id": 40,
+    "text": "It's not whether you get knocked down, it's whether you get up.",
+    "author": "Vince Lombardi",
+    "category": "perseverance"
+  },
+  {
+    "id": 41,
+    "text": "The secret of change is to focus all of your energy not on fighting the old, but on building the new.",
+    "author": "Socrates",
+    "category": "change"
+  },
+  {
+    "id": 42,
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "category": "success"
+  },
+  {
+    "id": 43,
+    "text": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "category": "perseverance"
+  },
+  {
+    "id": 44,
+    "text": "The only person you should try to be better than is the person you were yesterday.",
+    "author": "Unknown",
+    "category": "growth"
+  },
+  {
+    "id": 45,
+    "text": "I am not a product of my circumstances. I am a product of my decisions.",
+    "author": "Stephen Covey",
+    "category": "mindset"
+  },
+  {
+    "id": 46,
+    "text": "Every child is an artist. The problem is how to remain an artist once we grow up.",
+    "author": "Pablo Picasso",
+    "category": "creativity"
+  },
+  {
+    "id": 47,
+    "text": "You can never cross the ocean until you have the courage to lose sight of the shore.",
+    "author": "Christopher Columbus",
+    "category": "courage"
+  },
+  {
+    "id": 48,
+    "text": "But you can't just stick to what you know. You have to extend yourself to the limits of your abilities.",
+    "author": "David Attenborough",
+    "category": "growth"
+  },
+  {
+    "id": 49,
+    "text": "The greatest wealth is to live content with little.",
+    "author": "Plato",
+    "category": "wisdom"
+  },
+  {
+    "id": 50,
+    "text": "Happiness is not by chance, but by choice.",
+    "author": "Unknown",
+    "category": "happiness"
   }
 ]

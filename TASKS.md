@@ -20,8 +20,8 @@
 - [x] Configure CORS middleware for cross-origin requests (public API)
 
 ## Phase 4: Documentation & Deployment
-- [ ] Generate OpenAPI/Swagger docs with FastAPI automatic docs
-- [ ] Write README.md with API endpoint documentation and example responses
+- [x] Generate OpenAPI/Swagger docs with FastAPI automatic docs
+- [x] Write README.md with API endpoint documentation and example responses
 - [ ] Create Dockerfile for containerized deployment
 - [ ] Set up GitHub Actions for CI: linting (ruff), testing on push
 ```

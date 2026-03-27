@@ -27,7 +27,85 @@ pip install fastapi uvicorn
 uvicorn main:app --reload
 ```
 
-Visit http://localhost:8000/docs for interactive API documentation.
+## API Documentation
+
+The API provides three endpoints for accessing inspirational quotes. FastAPI automatically generates interactive OpenAPI/Swagger documentation at:
+
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+
+### Endpoints
+
+#### GET / (Root)
+
+Returns a single random quote.
+
+**Response:**
+```json
+{
+  "id": 42,
+  "text": "The only way to do great work is to love what you do.",
+  "author": "Steve Jobs",
+  "category": "motivation"
+}
+```
+
+#### GET /quotes
+
+Returns all quotes, with optional category filtering.
+
+**Query Parameters:**
+- `category` (optional): Filter quotes by category (e.g., "motivation", "life", "inspiration")
+
+**Example (all quotes):**
+```json
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "motivation"
+  },
+  {
+    "id": 2,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "life"
+  }
+]
+```
+
+**Example (filtered by category=motivation):**
+```json
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "motivation"
+  }
+]
+```
+
+#### GET /quote/{quote_id}
+
+Returns a specific quote by its unique ID.
+
+**Path Parameters:**
+- `quote_id`: The unique numeric identifier of the quote
+
+**Example response:**
+```json
+{
+  "id": 42,
+  "text": "The only way to do great work is to love what you do.",
+  "author": "Steve Jobs",
+  "category": "motivation"
+}
+```
+
+**Error responses:**
+- `404 Not Found`: When the specified quote ID does not exist
 
 ## Project Status
 

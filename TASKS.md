@@ -3,7 +3,7 @@
 
 ## Phase 1: Planning & Setup
 - [x] Define the quote data structure (e.g., JSON array with fields: id, text, author, category)
-- [ ] Choose storage method: in-memory array vs JSON file vs SQLite database
+- [x] Choose storage method: in-memory array vs JSON file vs SQLite database
 - [ ] Initialize FastAPI project with uv (Python 3.9+) or pip + virtualenv
 - [ ] Set up basic project structure: main.py, quotes_data.json, tests/, requirements.txt
 

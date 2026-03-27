@@ -19,6 +19,8 @@ A tiny FastAPI service that returns random inspirational quotes.
 
 ## Quick Start
 
+### Local Development
+
 ```bash
 # Install dependencies
 pip install fastapi uvicorn
@@ -26,6 +28,18 @@ pip install fastapi uvicorn
 # Run the server
 uvicorn main:app --reload
 ```
+
+### Docker Deployment
+
+```bash
+# Build the Docker image
+docker build -t flash-quote-api .
+
+# Run the container
+docker run -p 8000:8000 flash-quote-api
+```
+
+The API will be available at http://localhost:8000
 
 ## API Documentation
 

@@ -23,5 +23,5 @@
 - [x] Generate OpenAPI/Swagger docs with FastAPI automatic docs
 - [x] Write README.md with API endpoint documentation and example responses
  - [x] Create Dockerfile for containerized deployment
-- [ ] Set up GitHub Actions for CI: linting (ruff), testing on push
+ - [x] Set up GitHub Actions for CI: linting (ruff), testing on push
 ```

@@ -34,7 +34,7 @@ Visit http://localhost:8000/docs for interactive API documentation.
 **Phase 1: Planning & Setup**
 - ✅ Quote data structure defined (JSON with id, text, author, category)
 - ✅ Storage method: JSON file loaded into memory at startup
-- ⬜ Initialize FastAPI project with uv/pip
-- ⬜ Set up tests directory and add unit tests
+- ✅ Initialize FastAPI project with uv/pip
+- ✅ Set up tests directory and add unit tests
 
 See [TASKS.md](TASKS.md) for full development roadmap.
